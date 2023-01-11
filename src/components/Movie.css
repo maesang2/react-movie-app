@@ -5,6 +5,10 @@ p {
     text-decoration-line: none;
     color: aliceblue;
 }
+#link:hover{
+    color:aquamarine;
+    transition-duration: 0.5s;
+}
 h1 {
     color:aliceblue;
     text-align: center;

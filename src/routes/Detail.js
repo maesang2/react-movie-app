@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect } from 'react';
 import { useState } from 'react';
-
+import './Detail.css'
 function Detail(){
     const {id} = useParams();
     console.log(id);
@@ -15,10 +15,13 @@ function Detail(){
     useEffect(()=>{
       getMovie();
     },[]);
+    console.log(movie)
     return <>
     <img src={movie.medium_cover_image} />
-    <h1>{movie.title}</h1>
+    <h2>{movie.title}</h2>
     <div>{movie.summary}</div>
+    <div id="genres">genres</div>
+    <hr/>
     <ul>
         {movie.genres === undefined ? null :
         movie.genres.map((item,index)=>(

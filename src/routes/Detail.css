@@ -1,0 +1,28 @@
+p {
+    color:aliceblue
+}
+h2 {
+    text-decoration-line: none;
+    color: aliceblue;
+}
+h2:hover{
+    color:aquamarine;
+    transition-duration: 0.5s;
+}
+
+ul{
+    padding: 0;
+    color: aliceblue;
+}
+li{
+    
+    list-style: none;
+}
+#genres {
+    font-size: 20px;
+    color: aliceblue;
+}
+body {
+    padding-top: 5rem;
+    text-align: center;
+}
